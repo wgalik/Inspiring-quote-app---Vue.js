@@ -16,6 +16,7 @@ A simple and elegant web application built with **Vue 3** and **Vite** that fetc
 Follow these steps to run the app locally:
 
 ```bash
+
 # 1. Clone the repository
 git clone https://github.com/wgalik/Inspiring-quote-app---Vue.js.git
 cd Inspiring-quote-app---Vue.js
@@ -26,16 +27,17 @@ npm install
 # 3. Run the development server
 npm run dev
 
-## 📌 Purpose
-
+---
 
 ## 📬 Contact
 
 Feel free to reach out via:
+- Email: [wojciech.galik@gmail.com](mailto:wojciech.galik@gmail.com)
+- GitHub: [github.com/wgalik](https://github.com/wgalik)
+- Phone / WhatsApp: +48 796 144 888
 
-    Email: wojciech.galik@gmail.com
-    GitHub: github.com/wgalik
-    Phone / WhatsApp: +48 796 144 888
+---
 
 ## 📄 License
+
 This project is open for educational and portfolio purposes. All content is original and created by Wojciech Galik.
