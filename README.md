@@ -15,8 +15,6 @@ A simple and elegant web application built with **Vue 3** and **Vite** that fetc
 
 Follow these steps to run the app locally:
 
-```bash
-
 # 1. Clone the repository
 git clone https://github.com/wgalik/Inspiring-quote-app---Vue.js.git
 cd Inspiring-quote-app---Vue.js
