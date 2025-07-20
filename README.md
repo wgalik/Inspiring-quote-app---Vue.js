@@ -1,29 +1,44 @@
-# sentence_app_Vue.js
+# Inspiring Quote App ✨
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple and elegant web application built with **Vue 3** and **Vite** that fetches and displays random inspirational quotes from a **REST API**. Users can generate a new quote with a single click.
 
-## Recommended IDE Setup
+## 🧰 Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- REST API https://api.quotable.io
+- Composition API
+- Sass
+- Bootstrap
 
-## Customize configuration
+## 🚀 Getting Started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Follow these steps to run the app locally:
 
-## Project Setup
+```bash
+# 1. Clone the repository
+git clone https://github.com/wgalik/Inspiring-quote-app---Vue.js.git
+cd Inspiring-quote-app---Vue.js
 
-```sh
+# 2. Install dependencies
 npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
+# 3. Run the development server
 npm run dev
 ```
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 📬 Contact
+
+Feel free to reach out via:
+
+- Email: [wojciech.galik@gmail.com](mailto:wojciech.galik@gmail.com)
+- GitHub: [github.com/wgalik](https://github.com/wgalik)
+- Phone / WhatsApp: +48 796 144 888
+
+---
+
+## 📄 License
+
+This project is open for educational and portfolio purposes. All content is original and created by Wojciech Galik.
