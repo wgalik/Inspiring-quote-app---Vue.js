@@ -1,0 +1,195 @@
+$mainColor: #2f4858;
+$secondColor: #f0f4f8;
+$quoteFont: "Merienda";
+$textFont: "Roboto";
+
+////////////////////////////////////////
+*,
+:after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $secondColor;
+  &.dark-mode {
+    background-color: $mainColor;
+  }
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-activ,
+.fade-leave-active {
+  transition: 0.5s;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+////////////////////////////////////////
+div.color-toggle {
+  position: sticky;
+  top: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+
+  label {
+    width: 34px;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    display: block;
+    background-color: $mainColor;
+    border-radius: 10px;
+    box-shadow: inset 0px 0.5px 1.5px rgba(0, 0, 0, 0.4),
+      inset 0px -0.5px 1.5px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    &::after {
+      background-image: url("./moon-fill.svg");
+      background {
+        size: cover;
+        position: center center;
+      }
+      filter: invert(1);
+      content: "";
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: 0.3s;
+    }
+  }
+
+  input {
+    display: none;
+  }
+  input:checked + label {
+    background: $secondColor;
+  }
+  input:checked + label:after {
+    background-image: url("./brightness-high-fill.svg");
+    filter: contrast(0) sepia(1) saturate(5);
+    left: 32px;
+    transform: translateX(-100%);
+  }
+}
+
+////////////////////////////////////
+.container {
+  font-family: $quoteFont;
+  h1 {
+    color: $mainColor;
+  }
+  p {
+    font-family: $textFont;
+    color: $mainColor;
+  }
+  form {
+    font-family: $textFont;
+    text-align: center;
+    color: $mainColor;
+
+    .form-control:focus {
+      border-color: transparent;
+    }
+    input:focus {
+      box-shadow: 0 0 0 0.25rem rgba(47, 72, 88, 0.25);
+    }
+
+    button {
+      background-color: $mainColor;
+      border: none;
+      color: $secondColor;
+      transition: all 0.5s ease-in-out;
+      &:disabled {
+        background-color: $mainColor;
+        color: $secondColor;
+      }
+      &:hover {
+        background-color: $mainColor;
+        opacity: 1;
+        color: $secondColor;
+        box-shadow: 1px 1px 3px black;
+      }
+    }
+  }
+  blockquote {
+    color: $mainColor;
+  }
+
+  figcaption {
+    font-family: $textFont;
+  }
+
+  button.btn {
+    font-family: $textFont;
+    background-color: $mainColor;
+    opacity: 0.8;
+    border: none;
+    color: $secondColor;
+    transition: all 0.5s ease-in-out;
+  }
+
+  button.btn:hover {
+    background-color: $mainColor;
+    opacity: 1;
+    color: $secondColor;
+    box-shadow: 1px 1px 3px black;
+  }
+}
+.dark-mode .container {
+  $secondColor: #2f4858;
+  $mainColor: #f0f4f8;
+
+  h1 {
+    color: $mainColor;
+  }
+  p {
+    color: $mainColor;
+  }
+  form {
+    color: $mainColor;
+
+    button {
+      background-color: $mainColor;
+      color: $secondColor;
+      &:disabled {
+        background-color: $mainColor;
+        color: $secondColor;
+      }
+      &:hover {
+        background-color: $mainColor;
+        color: $secondColor;
+      }
+    }
+  }
+  blockquote {
+    color: $mainColor;
+  }
+
+  button.btn {
+    background-color: $mainColor;
+
+    color: $secondColor;
+    &.btn:hover {
+      background-color: $mainColor;
+
+      color: $secondColor;
+    }
+  }
+}
+.spinner-border {
+  color: $mainColor;
+}
+.dark-mode .spinner-border {
+  color: $secondColor;
+}
